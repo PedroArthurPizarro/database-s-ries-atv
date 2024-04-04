@@ -147,7 +147,7 @@ SET NACIONALIDADE = 'Brasil'
 WHERE NOME = 'O Auto da Compadecida';
 
 
---Acrescentar os campos novos
+-- Acrescentar os campos novos
 
 ALTER TABLE ENTRETERIMENTO
 ADD COLUMN RANKING INT;
@@ -158,7 +158,7 @@ ADD COLUMN RANKING_TIPO VARCHAR(50);
 ALTER TABLE ENTRETERIMENTO
 ADD COLUMN RANKING_NOME VARCHAR(50);
 
---Add filmes da netflix, amazon e etc.
+-- Add filmes da netflix, amazon e etc.
 INSERT INTO ENTRETERIMENTO (NOME, TIPO, DIRETOR, ATOR_PRINCIPAL, ATRIZ_PRINCIPAL, ANO_LANCAMENTO, DURACAO_MINUTOS, CLASSIFICACAO_ETARIA, GENERO, NACIONALIDADE, RANKING_NOME, RANKING_TIPO)
 VALUES 
 ('Dark', 'SÉRIE', 'Baran bo Odar', 'Louis Hofmann', 'Lisa Vicari', 2017, 60, '16+', 'Thriller', 'Alemanha', 'Netflix', 'Mundial');
